@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Agree vs. Disagree</h2>
+        <hr>
+        <h3><strong>About You</strong></h3>
+        <h4>Name </h4>
+        <input type="text" name="" id="name" class="form-control" required >
+
+        <hr>
+        <h3><strong>Q: 1</strong></h3>
+        <h4>Your favorite food is tacos</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Q: 2</strong></h3>
+        <h4>The best TV show of all time is clearly Avatar: The Last Airbender</h4>
+        <select data-placeholder="" class="chosen-select" id="q2">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Q: 3</strong></h3>
+        <h4>Dogs are better than cats</h4>
+        <select data-placeholder="" class="chosen-select" id="q3">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Q: 4</strong></h3>
+        <h4>Sleeping with a fan makes you a superior person</h4>
+        <select data-placeholder="" class="chosen-select" id="q4">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Q: 5</strong></h3>
+        <h4>Staying up way to late to do homework you should have done weeks ago is a common problem of yours</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Q: 6</strong></h3>
+        <h4>Harry Potter is every way possible is better than Star Wars</h4>
+        <select data-placeholder="" class="chosen-select" id="q6">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3><strong>Q: 7</strong></h3>
+        <h4>Rainy days are way better than sunny ones</h4>
+        <select data-placeholder="" class="chosen-select" id="q7">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Q: 8</strong></h3>
+        <h4>Coffee is the only good thing about the morning... and afternoon... and night</h4>
+        <select data-placeholder="" class="chosen-select" id="q8">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Q: 9</strong></h3>
+        <h4>Austin is clearly the best state in Texas</h4>
+        <select data-placeholder="" class="chosen-select" id="q9">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Q: 10</strong></h3>
+        <h4>In World of Warcraft, Horde is clearly the superior option</h4>
+        <select data-placeholder="" class="chosen-select" id="q10">
+            <option value="1"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+          <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+          </div>
+        </footer>
+
+    </div>
+
+
+    <div id="resultsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="matchName"></h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  <script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Nothing Found'},
+      '.chosen-select-width'     : {width:"100%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+    $("#submit").on("click", function(){
+        function validateForm() {
+          var isValid = true;
+          $('.form-control').each(function() {
+            if ( $(this).val() === '' )
+                isValid = false;
+          });
+          $('.chosen-select').each(function() {
+            if( $(this).val() === "")
+                isValid = false
+          })
+          return isValid;
+        }
+        if (validateForm() == true)
+        {
+            var userData = {
+                name: $("name").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+            }
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", userData, function(data){
+                console.log(data);
+
+                $("#matchName").text(data.name);
+                $("#resultsModal").modal('show');
+                         
+            });
+
+            $('#resultsModal').on('hidden.bs.modal', function () {
+                window.location.replace("/");  
+            })
+        }
+        else
+        {
+            alert("All questions must be answered!");
+        }
+        
+        return false;
+    });
+  </script>
+
+</body>
+</html>
